@@ -9,7 +9,12 @@
 <style>
 html,body{margin:0;height:100%;background:#F2F4F6;overflow:hidden}
 iframe{position:fixed;inset:0;width:100%;height:100%;border:0}
+#fb{position:fixed;inset:0;display:none;place-items:center;font:15px -apple-system,"Apple SD Gothic Neo",sans-serif;color:#1B1F24;text-align:center;padding:24px}
+#fb a{display:inline-block;margin-top:14px;background:#133A4F;color:#fff;text-decoration:none;border-radius:12px;padding:12px 20px;font-weight:700}
 </style>
 </head><body>
 <iframe src="https://script.google.com/macros/s/AKfycbzGVOAvpXFFPVHheZjRvWknyoqt0UH4qMPuCFCkWQVsWWXa1LWQAVY6ntXEfWKdiRNUhg/exec" allow="clipboard-read; clipboard-write; microphone; fullscreen" title="고객관리툴"></iframe>
+<div id="fb"><div>사파리에서는 이 화면 안에서 구글 로그인이 막혀요.<br><a href="https://script.google.com/macros/s/AKfycbzGVOAvpXFFPVHheZjRvWknyoqt0UH4qMPuCFCkWQVsWWXa1LWQAVY6ntXEfWKdiRNUhg/exec">원래 주소로 열기</a></div></div>
+<script>/* 사파리는 다른 사이트 안의 구글 로그인을 막아서, 사파리면 원래 주소로 바로 보냄 */
+var ua=navigator.userAgent;if(/Safari/.test(ua)&&!/Chrome|CriOS|Edg|Firefox|FxiOS/.test(ua)){location.replace(document.querySelector('#fb a').href)}</script>
 </body></html>
